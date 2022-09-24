@@ -45,8 +45,8 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
     Map->root->left->parent = Map->root;
   }
   else{
-    Map->root = key1;
-    Map->root->right = key2;
+    Map->root->pair->key = key1;
+    Map->root->right->pair->key = key2;
     Map->root->right->parent = Map->root;
   }
   return Map;
