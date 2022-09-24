@@ -74,13 +74,15 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     tree->current=tree->root;
     while(tree->current->right!=NULL && tree->current->left!=NULL ){
       if(is_equal(tree,tree->current->pair->key,key)){
-        printf("%d %d",tree->current->pair->key,key);
+        printf("es root");
         return tree->current->pair;
       }else{
         if(tree->lower_than(tree->current->pair->key,key)){
           tree->current = tree->current->right;
+          printf("se mueve derecha");
         }else{
           tree->current = tree->current->left;
+          printf("se mueve izquierda");
         }
       }
     }
