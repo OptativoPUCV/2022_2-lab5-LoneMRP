@@ -73,7 +73,6 @@ void eraseTreeMap(TreeMap * tree, void* key){
 Pair * searchTreeMap(TreeMap * tree, void* key) {
     if(is_equal(tree,tree->root->pair->key,key))
       printf("no son iguales");
-    aux=aux->right
     return tree->root->pair->key;
 }
 
