@@ -441,3 +441,9 @@ treemap.c:42:60: error: ‘key2’ undeclared (first use in this function)
       |                                                            ^~~~
 Compilation failed
 1af5dfa
+Sat 24 Sep 2022 01:36:31 AM UTC: 
+ treemap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  4|7
+total_score: 5/70
+9b7f0b5
