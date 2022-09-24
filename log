@@ -209,3 +209,21 @@ treemap.c:43:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 ae0b135
+Sat 24 Sep 2022 01:19:12 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:40:10: error: initialization of ‘int’ from ‘int (*)(void *, void *)’ makes integer from pointer without a cast [-Werror=int-conversion]
+   40 |   int lt=lower_than;
+      |          ^~~~~~~~~~
+treemap.c:42:10: error: ‘null’ undeclared (first use in this function)
+   42 |   return null;
+      |          ^~~~
+treemap.c:42:10: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+09ddd11
