@@ -78,10 +78,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         return tree->current->pair;
       }else{
         if(tree->lower_than(tree->current->pair->key,key)){
-          tree->current = tree->current->right;
+          tree->current = tree->current->left;
           printf("se mueve derecha");
         }else{
-          tree->current = tree->current->left;
+          tree->current = tree->current->right;
           printf("se mueve izquierda");
         }
       }
