@@ -48,3 +48,22 @@ treemap.c:49:48: error: expected statement before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 308fd18
+Sat 24 Sep 2022 12:58:57 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:43:32: error: ‘key2’ undeclared (first use in this function)
+   43 |     Map->root = createTreeNode(key2, NULL);
+      |                                ^~~~
+treemap.c:43:32: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:44:23: error: ‘key1’ undeclared (first use in this function)
+   44 |     Map->root->left = key1);
+      |                       ^~~~
+treemap.c:44:27: error: expected ‘;’ before ‘)’ token
+   44 |     Map->root->left = key1);
+      |                           ^
+      |                           ;
+treemap.c:44:27: error: expected statement before ‘)’ token
+Compilation failed
+2b78684
