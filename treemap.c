@@ -145,7 +145,9 @@ Pair * nextTreeMap(TreeMap * tree) {
       }
     }
   }
-  if(tree->current->pair->key < tree->current->parent->pair->key)
-    tree->current=tree->current->parent;
+  else{
+    if(tree->current->pair->key < tree->current->parent->pair->key)
+      tree->current=tree->current->parent;
+  }
   return tree->current->pair;
   }
