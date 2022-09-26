@@ -142,8 +142,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
       }
     }
   }
-  printf("%s",tree->current->pair->key);
-  printf("%s",aux->pair->key);
+  printf("%d",tree->current->pair->key);
+  printf("%d",aux->pair->key);
   return aux->pair;
 }
 
