@@ -144,9 +144,9 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = tree->current->left;
       }
       return tree->current->pair;
+    }
     else
       return tree->current->pair;
-    }
   }
   if(tree->current->pair->key < tree->current->parent->pair->key){
     tree->current = tree->current->parent;
@@ -163,5 +163,5 @@ Pair * nextTreeMap(TreeMap * tree) {
       return tree->current->pair;
   }
   else
-  return NULL;
+    return NULL;
 }
