@@ -148,6 +148,8 @@ Pair * nextTreeMap(TreeMap * tree) {
   else{
     if(tree->current->pair->key < tree->current->parent->pair->key)
       tree->current=tree->current->parent;
+    else
+      tree->current=tree->current->parent->parent;
   }
   return tree->current->pair;
   }
