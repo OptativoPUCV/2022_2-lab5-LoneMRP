@@ -768,3 +768,23 @@ treemap.c:146:26: error: expected identifier before ‘&’ token
       |                          ^
 Compilation failed
 2a2e493
+Mon 26 Sep 2022 03:04:08 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:145:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘void *’ [-Werror=format=]
+  145 |   printf("%d",tree->current->pair->key);
+      |           ~^  ~~~~~~~~~~~~~~~~~~~~~~~~
+      |            |                     |
+      |            int                   void *
+      |           %p
+treemap.c:146:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘void *’ [-Werror=format=]
+  146 |   printf("%d",aux->pair->key);
+      |           ~^  ~~~~~~~~~~~~~~
+      |            |           |
+      |            int         void *
+      |           %p
+cc1: all warnings being treated as errors
+Compilation failed
+b87ece2
