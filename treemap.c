@@ -162,6 +162,5 @@ Pair * nextTreeMap(TreeMap * tree) {
     else
       return tree->current->pair;
   }
-  else
-    return NULL;
+  return NULL;
 }
